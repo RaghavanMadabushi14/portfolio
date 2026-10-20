@@ -36,7 +36,9 @@ for (const width of widths) {
   await page.evaluate(async () => {
     for (const img of document.images) img.loading = 'eager';
     await Promise.all([...document.images].map((i) => i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; })));
+    await Promise.all([...document.images].map((i) => i.decode().catch(() => {})));
     await document.fonts.ready;
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
   });
   const r = await page.evaluate(() => {
     const vw = document.documentElement.clientWidth;
