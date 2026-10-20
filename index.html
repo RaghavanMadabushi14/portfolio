@@ -5,6 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Raghavan Madabushi — Engineering Portfolio</title>
 <meta name="description" content="Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.">
+<link rel="canonical" href="https://raghavan-madabushi.vercel.app/">
+<meta name="author" content="Raghavan Madabushi">
+<meta name="theme-color" content="#ECEDEF">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavan-madabushi.vercel.app/">
+<meta property="og:title" content="Raghavan Madabushi · Robotics &amp; Embedded Systems">
+<meta property="og:description" content="Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.">
+<meta property="og:image" content="https://raghavan-madabushi.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Raghavan Madabushi · Robotics &amp; Embedded Systems">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raghavan Madabushi · Robotics &amp; Embedded Systems">
+<meta name="twitter:description" content="Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.">
+<meta name="twitter:image" content="https://raghavan-madabushi.vercel.app/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raghavan Madabushi",
+  "jobTitle": "Electrical Engineering student",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" },
+  "url": "https://raghavan-madabushi.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/raghavan-madabushi-0aaa0533b/",
+    "https://github.com/RaghavanMadabushi14",
+    "https://pypi.org/project/realbench-robotics/"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
@@ -15,7 +47,24 @@ a:hover{text-decoration-color:#14171A}
 a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3px}
 .zoom{display:block;text-decoration:none}
 .zoom:focus-visible{outline:2px solid #2A78D6;outline-offset:3px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+#realbench,#nurturiq,#rtl-agent,#contact{scroll-margin-top:72px}
+@media (max-width: 520px){#realbench,#nurturiq,#rtl-agent,#contact{scroll-margin-top:104px}}
+footer dd a{padding:11px 0}
+.tap-y{padding-top:12px !important;padding-bottom:12px !important;margin-top:-8px;margin-bottom:-8px}
+#copy-btn{position:relative}
+#copy-btn::after{content:"";position:absolute;left:0;right:0;top:-6px;bottom:-6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.pr-wrap{position:relative}
+.pr-hint{display:none}
+@media (max-width: 760px){
+  .pr-wrap::after{content:"";position:absolute;top:0;right:0;bottom:0;width:48px;border-radius:0 10px 10px 0;background:linear-gradient(to right,rgba(14,17,22,0),#0E1116);pointer-events:none;transition:opacity .2s}
+  .pr-wrap.at-end::after{opacity:0}
+  .pr-hint{display:block;position:absolute;right:12px;bottom:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;line-height:16px;color:#9AA3AD;pointer-events:none;z-index:1;transition:opacity .2s}
+  .pr-wrap.at-end .pr-hint{opacity:0}
+}
 @media print{
+  .pr-wrap::after,.pr-hint{display:none !important}
   @page{margin:0.6in}
   body,html{background:#ffffff !important}
   .np{display:none !important}
@@ -43,7 +92,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 <main>
 <section aria-labelledby="intro-name" style="max-width: 1080px; margin: 0 auto; padding: 88px 20px 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px 36px">
-<img src="img/headshot.jpg" alt="Raghavan Madabushi" width="160" height="160" style="flex: 0 0 160px; width: 160px; height: 160px; object-fit: cover; object-position: 50% 60%; border-radius: 20px; background: #D5D8DD">
+<img src="img/headshot.jpg" alt="Raghavan Madabushi" width="381" height="823" loading="eager" fetchpriority="high" style="flex: 0 0 160px; width: 160px; height: 160px; object-fit: cover; object-position: 50% 60%; border-radius: 20px; background: #D5D8DD">
 <div style="flex: 1 1 420px; min-width: 0">
 <h1 id="intro-name" style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 600; letter-spacing: -0.02em">Raghavan Madabushi</h1>
 <p style="margin: 14px 0 0; max-width: 36em; font-size: 21px; line-height: 1.45; text-wrap: pretty">Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.</p>
@@ -54,7 +103,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 <span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">U.S. person (permanent resident)</span>
 <span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">Open to Spring/Summer 2027 internships</span>
 <span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">20 hrs/week now</span>
-<a href="#contact" class="np" style="margin-left: 8px; padding: 4px 0">Contact ↓</a>
+<a href="#contact" class="np tap-y" style="margin-left: 8px; padding: 4px 0">Contact ↓</a>
 </div>
 
 <nav aria-label="Projects" style="margin-top: 64px; border-top: 1px solid #D5D8DD">
@@ -79,7 +128,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 </nav>
 </section>
 
-<section id="realbench" aria-labelledby="rb-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<section id="realbench" aria-labelledby="rb-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
 <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">01</span>
 <h2 id="rb-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">RealBench</h2>
@@ -101,7 +150,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 </div>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<div class="pr-scroll" style="overflow-x: auto; padding: 24px 28px; background: #0E1116; border-radius: 10px; color: #E6E8EB">
+<div class="pr-wrap">
+<span class="pr-hint" aria-hidden="true">scroll →</span>
+<div class="pr-scroll" tabindex="0" role="region" aria-label="Verdict output, scrolls horizontally" style="overflow-x: auto; padding: 24px 28px; background: #0E1116; border-radius: 10px; color: #E6E8EB">
 <div role="img" aria-label="RealBench verdict for the test fixture: NOT_READY_RECOVERABLE, exit code 1. Seven checks pass, four are not applicable, and check_joints_at_home fails because FR_calf_joint is at -2.100 instead of -1.300." style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 20px; min-width: 700px">
 <div style="font-size: 22px; line-height: 28px; font-weight: 700; color: #F5A524">NOT_READY_RECOVERABLE</div>
 <div style="margin-top: 12px; display: grid; grid-template-columns: 236px 86px 132px 172px 1fr; white-space: nowrap">
@@ -122,26 +173,27 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 <div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #262B33; color: #9AA3AD">robot=a1_ros2_fixture  dof=12  <span style="color: #F5A524">exit code 1</span></div>
 </div>
 </div>
+</div>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.1 · </span>Real output from the test fixture. 7 checks pass, 4 don’t apply, 1 fails (a joint is off its home pose), so the verdict is NOT_READY_RECOVERABLE and the exit code is 1.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<a class="zoom" href="img/realbench/realbench-architecture.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/realbench-architecture.png" width="2400" height="1280" alt="Architecture: robot model, telemetry and declared components feed liveness, health and pose checks; each check returns PASS, FAIL, UNVERIFIABLE (treated as FAIL) or NOT_APPLICABLE, and the verdict maps to an exit code where any non-zero code blocks the next test run." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/realbench/realbench-architecture.png" target="_blank" rel="noopener" aria-label="Open full-size: Architecture: robot model, telemetry and declared components feed liveness, health and pose checks; each check returns PASS, FAIL, UNVERIFIABLE (treated as FAIL) or NOT_APPLICABLE, and the verdict maps to an exit code where any non-zero code blocks the next test run." style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/realbench-architecture.png" width="2400" height="1280" alt="Architecture: robot model, telemetry and declared components feed liveness, health and pose checks; each check returns PASS, FAIL, UNVERIFIABLE (treated as FAIL) or NOT_APPLICABLE, and the verdict maps to an exit code where any non-zero code blocks the next test run." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.2 · </span>How a verdict is made. Every check returns one of four states; anything unverifiable is treated as a failure, and the verdict maps to an exit code that blocks the next test run.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 64px 0 0">
-<a class="zoom" href="img/realbench/jackal-timeline.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-timeline.png" width="2400" height="1280" alt="Stacked timeline of 9,627 evaluations over 8.15 hours: the robot was READY only 9% of the time; 72% of evaluations were quarantined for LiDAR clock skew that flips between ahead and behind on an exact 60-minute cycle." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/realbench/jackal-timeline.png" target="_blank" rel="noopener" aria-label="Open full-size: Stacked timeline of 9,627 evaluations over 8.15 hours: the robot was READY only 9% of the time; 72% of evaluations were quarantined for LiDAR clock skew that flips between ahead and behind on an exact 60-minute cycle." style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-timeline.png" width="2400" height="1280" alt="Stacked timeline of 9,627 evaluations over 8.15 hours: the robot was READY only 9% of the time; 72% of evaluations were quarantined for LiDAR clock skew that flips between ahead and behind on an exact 60-minute cycle." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 14px; max-width: 72ch; font-size: 16px; line-height: 1.6"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.3 · </span>8.15 hours on a physical Clearpath Jackal. RealBench flagged a fault on its first evaluation: the LiDAR’s timestamps disagreed with the host clock. The error flips direction on an exact 60-minute cycle, the signature of a periodic clock step. The robot was quarantined 91% of the time.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<a class="zoom" href="img/realbench/jackal-fault-breakdown.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-fault-breakdown.png" width="2400" height="960" alt="Bar chart of quarantine reasons: LiDAR timestamps ahead of the host clock (5,542) and behind it (1,420) dwarf the robot's other self-reported faults (1,021, 545 and 207 evaluations)." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/realbench/jackal-fault-breakdown.png" target="_blank" rel="noopener" aria-label="Open full-size: Bar chart of quarantine reasons: LiDAR timestamps ahead of the host clock (5,542) and behind it (1,420) dwarf the robot's other self-reported faults (1,021, 545 and 207 evaluations)." style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-fault-breakdown.png" width="2400" height="960" alt="Bar chart of quarantine reasons: LiDAR timestamps ahead of the host clock (5,542) and behind it (1,420) dwarf the robot's other self-reported faults (1,021, 545 and 207 evaluations)." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.4 · </span>80% of quarantines trace to that one clock fault. The rest are faults the robot reported itself.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<a class="zoom" href="img/realbench/jackal-check-coverage.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-check-coverage.png" width="2400" height="1320" alt="Per-check results across all 9,627 evaluations: liveness and actuator checks pass almost every time, no_latched_faults fails 8,735 times, and six checks the robot's config did not declare are shown as not applicable rather than passed." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/realbench/jackal-check-coverage.png" target="_blank" rel="noopener" aria-label="Open full-size: Per-check results across all 9,627 evaluations: liveness and actuator checks pass almost every time, no_latched_faults fails 8,735 times, and six checks the robot's config did not declare are shown as not applicable rather than passed." style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-check-coverage.png" width="2400" height="1320" alt="Per-check results across all 9,627 evaluations: liveness and actuator checks pass almost every time, no_latched_faults fails 8,735 times, and six checks the robot's config did not declare are shown as not applicable rather than passed." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.5 · </span>Every check across every evaluation. The longest READY window lasted about 4 seconds, so a one-time check would have certified this robot about 1 time in 11. Checks the robot’s config didn’t declare show as NOT_APPLICABLE instead of being counted as passes.</figcaption>
 </figure>
 
@@ -165,11 +217,11 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 <div style="margin-top: 48px; padding-top: 16px; border-top: 1px solid #D5D8DD; font-size: 14px; line-height: 1.7; color: #5A6270">
 <p style="margin: 0"><span style="color: #14171A">Built with</span> Python · ROS 2 (rclpy) · Docker · pytest · URDF/MJCF parsing</p>
 <p style="margin: 0"><span style="color: #14171A">Limits</span> Reset execution is a scripted mock; it reads robot state and never commands motion.</p>
-<p style="margin: 4px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px"><code style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #14171A">pip install realbench-robotics</code><button type="button" class="np" id="copy-btn" aria-label="Copy install command" style="min-height: 32px; padding: 0 10px; border: 1px solid #C3C8CF; border-radius: 6px; background: transparent; color: #14171A; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; cursor: pointer">Copy</button><span aria-hidden="true">·</span><a href="https://pypi.org/project/realbench-robotics">PyPI ↗</a><span aria-hidden="true">·</span><span>Source available on request</span></p>
+<p style="margin: 4px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px"><code style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #14171A">pip install realbench-robotics</code><button type="button" class="np" id="copy-btn" aria-label="Copy install command" style="min-height: 32px; padding: 0 10px; border: 1px solid #C3C8CF; border-radius: 6px; background: transparent; color: #14171A; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; cursor: pointer">Copy</button><span id="copy-status" class="sr-only" aria-live="polite"></span><span aria-hidden="true">·</span><a href="https://pypi.org/project/realbench-robotics/" target="_blank" rel="noopener noreferrer">PyPI ↗</a><span aria-hidden="true">·</span><span>Source available on request</span></p>
 </div>
 </section>
 
-<section id="nurturiq" aria-labelledby="nq-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<section id="nurturiq" aria-labelledby="nq-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
 <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">02</span>
 <h2 id="nq-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">NurturIQ</h2>
@@ -207,28 +259,28 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 
 <figure class="pr-keep" style="margin: 48px 0 0">
 <div style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden">
-<a class="zoom" href="img/nurturiq/stimulus-timeline.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/stimulus-timeline.png" width="2400" height="880" alt="Timeline of the 55-second stimulus sequence: calibration, a silent face, two speaking faces, a side-by-side social versus geometric video, a joint-attention clip and an attention getter, separated by short rests." style="display: block; width: 100%; height: auto"></a>
-<a class="zoom" href="img/nurturiq/geometric-stimulus-strip.png" target="_blank" rel="noopener" style="padding: 0 0 4px"><img loading="lazy" decoding="async" src="img/nurturiq/geometric-stimulus-strip.png" width="2800" height="544" alt="Five procedurally generated geometric patterns used on the geometric side of the social-versus-geometric test: concentric rings, a star polygon, a square grid, a rotating star and a spiral." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/stimulus-timeline.png" target="_blank" rel="noopener" aria-label="Open full-size: Timeline of the 55-second stimulus sequence: calibration, a silent face, two speaking faces, a side-by-side social versus geometric video, a joint-attention clip and an attention getter, separated by short rests."><img loading="lazy" decoding="async" src="img/nurturiq/stimulus-timeline.png" width="2400" height="880" alt="Timeline of the 55-second stimulus sequence: calibration, a silent face, two speaking faces, a side-by-side social versus geometric video, a joint-attention clip and an attention getter, separated by short rests." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/geometric-stimulus-strip.png" target="_blank" rel="noopener" aria-label="Open full-size: Five procedurally generated geometric patterns used on the geometric side of the social-versus-geometric test: concentric rings, a star polygon, a square grid, a rotating star and a spiral." style="padding: 0 0 4px"><img loading="lazy" decoding="async" src="img/nurturiq/geometric-stimulus-strip.png" width="2800" height="544" alt="Five procedurally generated geometric patterns used on the geometric side of the social-versus-geometric test: concentric rings, a star polygon, a square grid, a rotating star and a spiral." style="display: block; width: 100%; height: auto"></a>
 </div>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.2 · </span>The 55-second stimulus sequence. Below it, the geometric side of the social-vs-geometric test, generated procedurally by our own code. The social and joint-attention clips are third-party videos and aren’t shown.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<a class="zoom" href="img/nurturiq/gaze-protocol.png" target="_blank" rel="noopener" style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-protocol.png" width="2400" height="1240" alt="Calibration protocol: 21 numbered targets in 3 columns and 7 rows, shown for 2 seconds each in a zigzag order, so the eyes have to travel vertically as well as horizontally." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/gaze-protocol.png" target="_blank" rel="noopener" aria-label="Open full-size: Calibration protocol: 21 numbered targets in 3 columns and 7 rows, shown for 2 seconds each in a zigzag order, so the eyes have to travel vertically as well as horizontally." style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-protocol.png" width="2400" height="1240" alt="Calibration protocol: 21 numbered targets in 3 columns and 7 rows, shown for 2 seconds each in a zigzag order, so the eyes have to travel vertically as well as horizontally." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.3 · </span>Calibration as a game: 21 targets, 2 seconds each, with seven rows to force vertical eye travel. Landmarks are reduced to numbers on the device; no video or photos are stored.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
 <div style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden">
-<a class="zoom" href="img/nurturiq/gaze-model-metrics.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-model-metrics.png" width="2400" height="919" alt="Held-out accuracy of the first gaze model: 72.8% for left versus right half of the screen, but only 56.6% for top versus bottom, barely above the 50% chance line." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/gaze-model-metrics.png" target="_blank" rel="noopener" aria-label="Open full-size: Held-out accuracy of the first gaze model: 72.8% for left versus right half of the screen, but only 56.6% for top versus bottom, barely above the 50% chance line."><img loading="lazy" decoding="async" src="img/nurturiq/gaze-model-metrics.png" width="2400" height="919" alt="Held-out accuracy of the first gaze model: 72.8% for left versus right half of the screen, but only 56.6% for top versus bottom, barely above the 50% chance line." style="display: block; width: 100%; height: auto"></a>
 <div aria-hidden="true" style="height: 1px; margin: 0 32px; background: #CFE0F5"></div>
-<a class="zoom" href="img/nurturiq/gaze-signal-strength.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-signal-strength.png" width="2600" height="1120" alt="Three feature plots: the horizontal iris feature falls steadily as the target moves right, the matching vertical feature shows no consistent trend, and relative iris y rises only slightly compared with the spread between sessions." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/gaze-signal-strength.png" target="_blank" rel="noopener" aria-label="Open full-size: Three feature plots: the horizontal iris feature falls steadily as the target moves right, the matching vertical feature shows no consistent trend, and relative iris y rises only slightly compared with the spread between sessions."><img loading="lazy" decoding="async" src="img/nurturiq/gaze-signal-strength.png" width="2600" height="1120" alt="Three feature plots: the horizontal iris feature falls steadily as the target moves right, the matching vertical feature shows no consistent trend, and relative iris y rises only slightly compared with the spread between sessions." style="display: block; width: 100%; height: auto"></a>
 </div>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.4–2.5 · </span>The first model separated left from right 72.8% of the time but top from bottom only 56.6%. Plotting the raw features showed why: the iris feature that tracks horizontal gaze has no consistent vertical trend. That finding drove the vertical-emphasis protocol and a richer feature set.</figcaption>
 </figure>
 
 <figure class="pr-keep" style="margin: 48px 0 0">
-<a class="zoom" href="img/nurturiq/nurturiq-agent-architecture.png" target="_blank" rel="noopener" style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/nurturiq-agent-architecture.png" width="2400" height="1240" alt="Agent architecture: a parent chat turn goes to an agentic router graph that sends it to a retrieval-augmented answer path with hybrid BM25 and dense retrieval, to inline cards, or to an exercise graph that walks through programs one step per turn, all sharing one checkpointed session." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/nurturiq-agent-architecture.png" target="_blank" rel="noopener" aria-label="Open full-size: Agent architecture: a parent chat turn goes to an agentic router graph that sends it to a retrieval-augmented answer path with hybrid BM25 and dense retrieval, to inline cards, or to an exercise graph that walks through programs one step per turn, all sharing one checkpointed session." style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/nurturiq-agent-architecture.png" width="2400" height="1240" alt="Agent architecture: a parent chat turn goes to an agentic router graph that sends it to a retrieval-augmented answer path with hybrid BM25 and dense retrieval, to inline cards, or to an exercise graph that walks through programs one step per turn, all sharing one checkpointed session." style="display: block; width: 100%; height: auto"></a>
 <figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.6 · </span>The parent chat is two LangGraph graphs sharing one session: an agentic router with hybrid BM25 + dense retrieval over therapy-book corpora, and an exercise graph that walks parents through programs one step at a time.</figcaption>
 </figure>
 
@@ -238,7 +290,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 </div>
 </section>
 
-<section id="rtl-agent" aria-labelledby="rtl-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<section id="rtl-agent" aria-labelledby="rtl-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
 <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">03</span>
 <h2 id="rtl-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">RTL Bug-Hunting Agent</h2>
@@ -281,16 +333,16 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 </section>
 </main>
 
-<footer id="contact" aria-labelledby="contact-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 56px; box-sizing: border-box; scroll-margin-top: 56px">
+<footer id="contact" aria-labelledby="contact-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 56px; box-sizing: border-box">
 <div style="padding-top: 40px; border-top: 1px solid #C3C8CF">
 <h2 id="contact-title" style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 600; letter-spacing: -0.02em">Let’s talk.</h2>
 <dl style="margin: 36px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Email</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="mailto:raghavanmadabushi10@gmail.com">raghavanmadabushi10@gmail.com</a></dd></div>
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Phone</dt><dd style="margin: 0; font-size: 18px"><a href="tel:+12054272717">205-427-2717</a></dd></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">LinkedIn</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://linkedin.com/in/raghavanmadabushi">linkedin.com/in/raghavanmadabushi</a></dd></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">GitHub</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://github.com/RaghavanMadabushi14">github.com/RaghavanMadabushi14</a></dd></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">PyPI</dt><dd style="margin: 0; font-size: 18px"><a href="https://pypi.org/project/realbench-robotics">realbench-robotics</a></dd></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Résumé</dt><dd style="margin: 0; font-size: 18px"><a href="resume.pdf">Résumé (PDF) ↓</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">LinkedIn</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://www.linkedin.com/in/raghavan-madabushi-0aaa0533b/" target="_blank" rel="noopener noreferrer">linkedin.com/in/raghavan-madabushi-0aaa0533b</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">GitHub</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://github.com/RaghavanMadabushi14" target="_blank" rel="noopener noreferrer">github.com/RaghavanMadabushi14</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">PyPI</dt><dd style="margin: 0; font-size: 18px"><a href="https://pypi.org/project/realbench-robotics/" target="_blank" rel="noopener noreferrer">realbench-robotics</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Résumé</dt><dd style="margin: 0; font-size: 18px"><a href="/resume.pdf" download="Raghavan_Madabushi_Resume.pdf" type="application/pdf">Résumé (PDF) ↓</a></dd></div>
 </dl>
 <p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #5A6270">Atlanta, GA · Open to EE, embedded, robotics and autonomy internships · Spring/Summer 2027</p>
 <p style="margin: 40px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">© 2026 Raghavan Madabushi</p>
@@ -299,11 +351,31 @@ a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3p
 </div>
 <script>
 (function(){
-  var b=document.getElementById('copy-btn'); if(!b) return; var t;
-  b.addEventListener('click',function(){
-    try{ if(navigator.clipboard) navigator.clipboard.writeText('pip install realbench-robotics'); }catch(e){}
-    b.textContent='Copied'; clearTimeout(t); t=setTimeout(function(){ b.textContent='Copy'; },1800);
-  });
+  var b=document.getElementById('copy-btn');
+  if(b){
+    var s=document.getElementById('copy-status'), t, txt='pip install realbench-robotics';
+    var fallback=function(){
+      var a=document.createElement('textarea');
+      a.value=txt; a.setAttribute('readonly',''); a.style.position='fixed'; a.style.top='0'; a.style.left='-9999px'; a.style.opacity='0';
+      document.body.appendChild(a); a.select(); a.setSelectionRange(0,txt.length);
+      var ok=false; try{ ok=document.execCommand('copy'); }catch(e){}
+      document.body.removeChild(a); return ok;
+    };
+    var done=function(ok){
+      b.textContent=ok?'Copied':'Copy failed'; if(s) s.textContent=ok?'Copied':'Copy failed';
+      clearTimeout(t); t=setTimeout(function(){ b.textContent='Copy'; if(s) s.textContent=''; },1800);
+    };
+    b.addEventListener('click',function(){
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(txt).then(function(){ done(true); },function(){ done(fallback()); });
+      } else { done(fallback()); }
+    });
+  }
+  var w=document.querySelector('.pr-wrap'), sc=w&&w.querySelector('.pr-scroll');
+  if(sc){
+    var upd=function(){ w.classList.toggle('at-end', sc.scrollLeft+sc.clientWidth>=sc.scrollWidth-4); };
+    sc.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd); upd();
+  }
 })();
 </script>
 </body>
