@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raghavan Madabushi — Engineering Portfolio</title>
+<meta name="description" content="Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#ECEDEF}
+a{color:#14171A;text-decoration:underline;text-decoration-color:#9AA1AC;text-underline-offset:3px}
+a:hover{text-decoration-color:#14171A}
+a:focus-visible,button:focus-visible{outline:2px solid #14171A;outline-offset:3px}
+.zoom{display:block;text-decoration:none}
+.zoom:focus-visible{outline:2px solid #2A78D6;outline-offset:3px}
+@media print{
+  @page{margin:0.6in}
+  body,html{background:#ffffff !important}
+  .np{display:none !important}
+  .pr-scroll{overflow:visible !important}
+  .pr-keep{break-inside:avoid}
+  header{position:static !important}
+}
+</style>
+</head>
+<body>
+<div id="top" style="background: #ECEDEF; color: #14171A; font-family: 'IBM Plex Sans', Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100%; -webkit-font-smoothing: antialiased">
+
+<header class="np" style="position: sticky; top: 0; z-index: 10; background: rgba(236,237,239,0.96); border-bottom: 1px solid #D5D8DD">
+<nav aria-label="Sections" style="max-width: 1080px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; min-height: 56px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; column-gap: 24px; font-size: 14px; line-height: 20px">
+<a href="#top" style="padding: 12px 0; font-weight: 600; text-decoration: none">Raghavan Madabushi</a>
+<div style="display: flex; flex-wrap: wrap; column-gap: 20px">
+<a href="#realbench" style="padding: 12px 0; color: #5A6270; text-decoration: none">RealBench</a>
+<a href="#nurturiq" style="padding: 12px 0; color: #5A6270; text-decoration: none">NurturIQ</a>
+<a href="#rtl-agent" style="padding: 12px 0; color: #5A6270; text-decoration: none">RTL Agent</a>
+<a href="#contact" style="padding: 12px 0; color: #5A6270; text-decoration: none">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section aria-labelledby="intro-name" style="max-width: 1080px; margin: 0 auto; padding: 88px 20px 0; box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px 36px">
+<img src="img/headshot.jpg" alt="Raghavan Madabushi" width="160" height="160" style="flex: 0 0 160px; width: 160px; height: 160px; object-fit: cover; object-position: 50% 60%; border-radius: 20px; background: #D5D8DD">
+<div style="flex: 1 1 420px; min-width: 0">
+<h1 id="intro-name" style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 600; letter-spacing: -0.02em">Raghavan Madabushi</h1>
+<p style="margin: 14px 0 0; max-width: 36em; font-size: 21px; line-height: 1.45; text-wrap: pretty">Electrical Engineering @ Georgia Tech. I build systems that prove a robot is safe to run before it runs.</p>
+</div>
+</div>
+<p style="margin: 28px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; line-height: 20px; color: #5A6270">ROS 2 · Python · C/C++ · Verilog · computer vision · fail-closed verification</p>
+<div style="margin-top: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 8px; font-size: 14px; line-height: 20px">
+<span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">U.S. person (permanent resident)</span>
+<span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">Open to Spring/Summer 2027 internships</span>
+<span style="padding: 4px 10px; border: 1px solid #D5D8DD; border-radius: 999px; color: #5A6270">20 hrs/week now</span>
+<a href="#contact" class="np" style="margin-left: 8px; padding: 4px 0">Contact ↓</a>
+</div>
+
+<nav aria-label="Projects" style="margin-top: 64px; border-top: 1px solid #D5D8DD">
+<a href="#realbench" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; padding: 18px 0; border-bottom: 1px solid #D5D8DD; text-decoration: none">
+<span style="flex: 0 0 32px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">01</span>
+<span style="flex: 0 0 200px; font-size: 19px; font-weight: 600">RealBench</span>
+<span style="flex: 1 1 280px; color: #5A6270">Fail-closed readiness checks for robots</span>
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">2026 →</span>
+</a>
+<a href="#nurturiq" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; padding: 18px 0; border-bottom: 1px solid #D5D8DD; text-decoration: none">
+<span style="flex: 0 0 32px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">02</span>
+<span style="flex: 0 0 200px; font-size: 19px; font-weight: 600">NurturIQ</span>
+<span style="flex: 1 1 280px; color: #5A6270">A phone camera as a gaze sensor for screening research</span>
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">2025–26 →</span>
+</a>
+<a href="#rtl-agent" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; padding: 18px 0; border-bottom: 1px solid #D5D8DD; text-decoration: none">
+<span style="flex: 0 0 32px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">03</span>
+<span style="flex: 0 0 200px; font-size: 19px; font-weight: 600">RTL Bug-Hunting Agent</span>
+<span style="flex: 1 1 280px; color: #5A6270">An AI agent that proves RTL bugs with simulation · in progress</span>
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5A6270">2026 →</span>
+</a>
+</nav>
+</section>
+
+<section id="realbench" aria-labelledby="rb-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">01</span>
+<h2 id="rb-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">RealBench</h2>
+<span style="font-size: 15px; color: #5A6270">Founder &amp; sole engineer · Georgia Tech CREATE-X · Jun 2026 – present</span>
+</div>
+<p style="margin: 16px 0 0; max-width: 34em; font-size: 23px; line-height: 1.4; text-wrap: pretty">Decides whether a robot is verifiably ready for its next test run, and never says “ready” when it can’t prove it.</p>
+
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px 40px; font-size: 16px; line-height: 1.6">
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">Why this problem</h3><p style="margin: 10px 0 0">Robots in test pipelines fail silently between runs: a publisher keeps running while its data goes stale, a fault stays latched, a joint sits off its home pose. The next run then starts on a robot that isn’t ready. In 100+ interviews, robotics engineers described 5–30 minutes of reset downtime per test cycle.</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">What we built</h3><p style="margin: 10px 0 0">A Python tool that reads a robot’s URDF or MuJoCo model and its live ROS 2 telemetry, runs tiered liveness, health and pose checks, and returns one verdict with an exit code a CI pipeline can gate on. It is fail-closed: missing data counts as a failure. It’s published on PyPI and ran for 8.15 hours on a physical Clearpath Jackal.</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">What I learned</h3><p style="margin: 10px 0 0">“Can’t verify” has to be its own state, because treating missing data as a pass is how silent failures ship. Continuous evaluation reveals what a single check can’t. Enumerating all 16,384 check-state combinations in tests proved the safety rule instead of sampling it.</p></div>
+</div>
+
+<div class="pr-keep" style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding: 28px 32px; background: #0E1116; border-radius: 10px">
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #F5A524; font-variant-numeric: tabular-nums">8.15 h</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #9AA3AD">on a physical robot</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #F5A524; font-variant-numeric: tabular-nums">9,627</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #9AA3AD">evaluations</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #F5A524; font-variant-numeric: tabular-nums">299</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #9AA3AD">tests</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #F5A524; font-variant-numeric: tabular-nums">16,384</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #9AA3AD">state combinations tested</div></div>
+</div>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<div class="pr-scroll" style="overflow-x: auto; padding: 24px 28px; background: #0E1116; border-radius: 10px; color: #E6E8EB">
+<div role="img" aria-label="RealBench verdict for the test fixture: NOT_READY_RECOVERABLE, exit code 1. Seven checks pass, four are not applicable, and check_joints_at_home fails because FR_calf_joint is at -2.100 instead of -1.300." style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 20px; min-width: 700px">
+<div style="font-size: 22px; line-height: 28px; font-weight: 700; color: #F5A524">NOT_READY_RECOVERABLE</div>
+<div style="margin-top: 12px; display: grid; grid-template-columns: 236px 86px 132px 172px 1fr; white-space: nowrap">
+<span style="color: #9AA3AD; border-bottom: 1px solid #262B33; padding-bottom: 4px">name</span><span style="color: #9AA3AD; border-bottom: 1px solid #262B33; padding-bottom: 4px">tier</span><span style="color: #9AA3AD; border-bottom: 1px solid #262B33; padding-bottom: 4px">status</span><span style="color: #9AA3AD; border-bottom: 1px solid #262B33; padding-bottom: 4px">observed</span><span style="color: #9AA3AD; border-bottom: 1px solid #262B33; padding-bottom: 4px">expected</span>
+<span style="padding-top: 4px">check_command_responsive</span><span style="padding-top: 4px; color: #9AA3AD">LIVENESS</span><span style="padding-top: 4px; color: #3FB950">PASS</span><span style="padding-top: 4px">12.000</span><span style="padding-top: 4px">&lt;= 200.0</span>
+<span>check_state_stream_fresh</span><span style="color: #9AA3AD">LIVENESS</span><span style="color: #3FB950">PASS</span><span>age_s=0.887</span><span>&lt;= 10.0</span>
+<span>check_all_joints_reported</span><span style="color: #9AA3AD">LIVENESS</span><span style="color: #3FB950">PASS</span><span>12/12 reported</span><span>12/12 reported</span>
+<span>check_sensors_reporting</span><span style="color: #9AA3AD">LIVENESS</span><span style="color: #8B949E">NOT_APPLICABLE</span><span style="color: #8B949E">—</span><span style="color: #8B949E">—</span>
+<span>check_nodes_alive</span><span style="color: #9AA3AD">LIVENESS</span><span style="color: #8B949E">NOT_APPLICABLE</span><span style="color: #8B949E">—</span><span style="color: #8B949E">—</span>
+<span>check_no_latched_faults</span><span style="color: #9AA3AD">HEALTH</span><span style="color: #3FB950">PASS</span><span>none</span><span>none</span>
+<span>check_clock_sane</span><span style="color: #9AA3AD">HEALTH</span><span style="color: #3FB950">PASS</span><span>skew_s=-0.887</span><span>max_abs_skew_s 5.0</span>
+<span>check_actuators_enabled</span><span style="color: #9AA3AD">HEALTH</span><span style="color: #3FB950">PASS</span><span>12/12 enabled</span><span>12/12 enabled</span>
+<span>check_sensors_plausible</span><span style="color: #9AA3AD">HEALTH</span><span style="color: #8B949E">NOT_APPLICABLE</span><span style="color: #8B949E">—</span><span style="color: #8B949E">—</span>
+<span>check_sensors_changing</span><span style="color: #9AA3AD">HEALTH</span><span style="color: #8B949E">NOT_APPLICABLE</span><span style="color: #8B949E">—</span><span style="color: #8B949E">—</span>
+<span>check_joints_within_limits</span><span style="color: #9AA3AD">POSE</span><span style="color: #3FB950">PASS</span><span>12/12 within limits</span><span>12/12 within limits</span>
+<span>check_joints_at_home</span><span style="color: #9AA3AD">POSE</span><span style="color: #F85149; font-weight: 700">FAIL</span><span style="color: #F85149">FR_calf_joint=-2.100</span><span>-1.300 (tol 0.010)</span>
+</div>
+<div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #262B33; color: #9AA3AD">robot=a1_ros2_fixture  dof=12  <span style="color: #F5A524">exit code 1</span></div>
+</div>
+</div>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.1 · </span>Real output from the test fixture. 7 checks pass, 4 don’t apply, 1 fails (a joint is off its home pose), so the verdict is NOT_READY_RECOVERABLE and the exit code is 1.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<a class="zoom" href="img/realbench/realbench-architecture.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/realbench-architecture.png" width="2400" height="1280" alt="Architecture: robot model, telemetry and declared components feed liveness, health and pose checks; each check returns PASS, FAIL, UNVERIFIABLE (treated as FAIL) or NOT_APPLICABLE, and the verdict maps to an exit code where any non-zero code blocks the next test run." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.2 · </span>How a verdict is made. Every check returns one of four states; anything unverifiable is treated as a failure, and the verdict maps to an exit code that blocks the next test run.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 64px 0 0">
+<a class="zoom" href="img/realbench/jackal-timeline.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-timeline.png" width="2400" height="1280" alt="Stacked timeline of 9,627 evaluations over 8.15 hours: the robot was READY only 9% of the time; 72% of evaluations were quarantined for LiDAR clock skew that flips between ahead and behind on an exact 60-minute cycle." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 14px; max-width: 72ch; font-size: 16px; line-height: 1.6"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.3 · </span>8.15 hours on a physical Clearpath Jackal. RealBench flagged a fault on its first evaluation: the LiDAR’s timestamps disagreed with the host clock. The error flips direction on an exact 60-minute cycle, the signature of a periodic clock step. The robot was quarantined 91% of the time.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<a class="zoom" href="img/realbench/jackal-fault-breakdown.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-fault-breakdown.png" width="2400" height="960" alt="Bar chart of quarantine reasons: LiDAR timestamps ahead of the host clock (5,542) and behind it (1,420) dwarf the robot's other self-reported faults (1,021, 545 and 207 evaluations)." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.4 · </span>80% of quarantines trace to that one clock fault. The rest are faults the robot reported itself.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<a class="zoom" href="img/realbench/jackal-check-coverage.png" target="_blank" rel="noopener" style="background: #0E1116; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/realbench/jackal-check-coverage.png" width="2400" height="1320" alt="Per-check results across all 9,627 evaluations: liveness and actuator checks pass almost every time, no_latched_faults fails 8,735 times, and six checks the robot's config did not declare are shown as not applicable rather than passed." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.5 · </span>Every check across every evaluation. The longest READY window lasted about 4 seconds, so a one-time check would have certified this robot about 1 time in 11. Checks the robot’s config didn’t declare show as NOT_APPLICABLE instead of being counted as passes.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<div style="padding: 28px 32px; background: #0E1116; border-radius: 10px; color: #E6E8EB">
+<table aria-label="Joints per robot validated with no per-model configuration" style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; text-align: left; font-variant-numeric: tabular-nums">
+<thead><tr><th scope="col" style="width: 42%; padding: 0 12px 10px 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; font-weight: 500; color: #9AA3AD; border-bottom: 1px solid #262B33">ROBOT</th><th scope="col" style="padding: 0 0 10px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; font-weight: 500; color: #9AA3AD; border-bottom: 1px solid #262B33">JOINTS</th></tr></thead>
+<tbody>
+<tr><td style="padding: 10px 12px 10px 0; border-bottom: 1px solid #262B33">Unitree A1</td><td style="padding: 10px 0; border-bottom: 1px solid #262B33"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 41%; background: #F5A524"></span>12</div></td></tr>
+<tr><td style="padding: 10px 12px 10px 0; border-bottom: 1px solid #262B33">ANYmal B</td><td style="padding: 10px 0; border-bottom: 1px solid #262B33"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 41%; background: #F5A524"></span>12</div></td></tr>
+<tr><td style="padding: 10px 12px 10px 0; border-bottom: 1px solid #262B33">CHAMP</td><td style="padding: 10px 0; border-bottom: 1px solid #262B33"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 41%; background: #F5A524"></span>12</div></td></tr>
+<tr><td style="padding: 10px 12px 10px 0; border-bottom: 1px solid #262B33">Unitree G1 humanoid</td><td style="padding: 10px 0; border-bottom: 1px solid #262B33"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 100%; max-width: 80%; background: #F5A524"></span>29</div></td></tr>
+<tr><td style="padding: 10px 12px 10px 0; border-bottom: 1px solid #262B33">Franka Panda</td><td style="padding: 10px 0; border-bottom: 1px solid #262B33"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 19%; background: #F5A524"></span>7</div></td></tr>
+<tr><td style="padding: 10px 12px 0 0">TurtleBot3 Burger</td><td style="padding: 10px 0 0"><div style="display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', ui-monospace, monospace"><span aria-hidden="true" style="height: 3px; width: 6%; background: #F5A524"></span>2</div></td></tr>
+</tbody>
+</table>
+</div>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 1.6 · </span>The same tool, with no per-model configuration, from a 2-joint TurtleBot to a 29-joint humanoid. A six-case ROS 2 integration harness in Docker (baseline, off-home, missing joint, dead publisher, diagnostics-only, fully configured) surfaced two latent defects, including a fail-open path that counted joints reporting null positions as present.</figcaption>
+</figure>
+
+<div style="margin-top: 48px; padding-top: 16px; border-top: 1px solid #D5D8DD; font-size: 14px; line-height: 1.7; color: #5A6270">
+<p style="margin: 0"><span style="color: #14171A">Built with</span> Python · ROS 2 (rclpy) · Docker · pytest · URDF/MJCF parsing</p>
+<p style="margin: 0"><span style="color: #14171A">Limits</span> Reset execution is a scripted mock; it reads robot state and never commands motion.</p>
+<p style="margin: 4px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px"><code style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #14171A">pip install realbench-robotics</code><button type="button" class="np" id="copy-btn" aria-label="Copy install command" style="min-height: 32px; padding: 0 10px; border: 1px solid #C3C8CF; border-radius: 6px; background: transparent; color: #14171A; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; cursor: pointer">Copy</button><span aria-hidden="true">·</span><a href="https://pypi.org/project/realbench-robotics">PyPI ↗</a><span aria-hidden="true">·</span><span>Source available on request</span></p>
+</div>
+</section>
+
+<section id="nurturiq" aria-labelledby="nq-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">02</span>
+<h2 id="nq-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">NurturIQ</h2>
+<span style="font-size: 15px; color: #5A6270">Founder &amp; CTO · Georgia Tech CREATE-X · Dec 2025 – Jun 2026</span>
+</div>
+<p style="margin: 8px 0 0; font-size: 16px; color: #5A6270">Computer-vision screening research and RAG-based AI agents</p>
+<p style="margin: 16px 0 0; max-width: 34em; font-size: 23px; line-height: 1.4; text-wrap: pretty">Turned a phone camera into a research gaze sensor, so screening research didn’t need a dedicated eye tracker.</p>
+
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px 40px; font-size: 16px; line-height: 1.6">
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">Why this problem</h3><p style="margin: 10px 0 0">Families can wait many months for a developmental evaluation. We explored whether a phone camera could capture an objective gaze signal at home that clinicians could use to prioritize. It was a screening research tool, not a diagnostic.</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">What we built</h3><p style="margin: 10px 0 0">A 120 fps iPhone capture pipeline and a FastAPI service that extracts face landmarks, aligns gaze to a timed stimulus protocol and computes session-level attention features. We also built a gamified calibration protocol with a gaze model trained on 41,528 labeled frames, and a parent care platform whose chat runs on LangGraph agents with hybrid retrieval (RAG).</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">What I learned</h3><p style="margin: 10px 0 0">Measure the signal before tuning the model. Our features tracked horizontal gaze but barely moved vertically, which explained the model’s weak top/bottom accuracy better than any hyperparameter could. Differences between people outweighed the vertical signal, so per-user calibration matters more than model choice.</p></div>
+</div>
+
+<div class="pr-keep" style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding: 28px 32px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px">
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #2A78D6; font-variant-numeric: tabular-nums">120 fps</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #5A6270">capture</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #2A78D6; font-variant-numeric: tabular-nums">41,528</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #5A6270">labeled gaze frames</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #2A78D6; font-variant-numeric: tabular-nums">85</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #5A6270">calibration sessions</div></div>
+<div><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 34px; line-height: 40px; font-weight: 500; color: #2A78D6; font-variant-numeric: tabular-nums">53+</div><div style="margin-top: 6px; font-size: 14px; line-height: 1.45; color: #5A6270">guided programs in the agent</div></div>
+</div>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<ol aria-label="Capture-to-review pipeline" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(max(116px, calc(12.5% - 7px)), 1fr)); gap: 8px; font-size: 13px; line-height: 1.4">
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">01</div><div style="margin-top: 6px">Timed stimulus protocol on a laptop</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">02</div><div style="margin-top: 6px">iPhone records the face at 120 fps</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">03</div><div style="margin-top: 6px">FastAPI video service</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">04</div><div style="margin-top: 6px">Facial landmarks and gaze direction</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">05</div><div style="margin-top: 6px">Stimulus-timing alignment</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">06</div><div style="margin-top: 6px">Session-level attention features</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">07</div><div style="margin-top: 6px">Tabular ML model</div></li>
+<li style="padding: 12px; background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 8px"><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 700; color: #1D5FB4">08</div><div style="margin-top: 6px">Screening-risk category for clinician review</div></li>
+</ol>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.1 · </span>From stimulus to clinician review.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<div style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden">
+<a class="zoom" href="img/nurturiq/stimulus-timeline.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/stimulus-timeline.png" width="2400" height="880" alt="Timeline of the 55-second stimulus sequence: calibration, a silent face, two speaking faces, a side-by-side social versus geometric video, a joint-attention clip and an attention getter, separated by short rests." style="display: block; width: 100%; height: auto"></a>
+<a class="zoom" href="img/nurturiq/geometric-stimulus-strip.png" target="_blank" rel="noopener" style="padding: 0 0 4px"><img loading="lazy" decoding="async" src="img/nurturiq/geometric-stimulus-strip.png" width="2800" height="544" alt="Five procedurally generated geometric patterns used on the geometric side of the social-versus-geometric test: concentric rings, a star polygon, a square grid, a rotating star and a spiral." style="display: block; width: 100%; height: auto"></a>
+</div>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.2 · </span>The 55-second stimulus sequence. Below it, the geometric side of the social-vs-geometric test, generated procedurally by our own code. The social and joint-attention clips are third-party videos and aren’t shown.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<a class="zoom" href="img/nurturiq/gaze-protocol.png" target="_blank" rel="noopener" style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-protocol.png" width="2400" height="1240" alt="Calibration protocol: 21 numbered targets in 3 columns and 7 rows, shown for 2 seconds each in a zigzag order, so the eyes have to travel vertically as well as horizontally." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.3 · </span>Calibration as a game: 21 targets, 2 seconds each, with seven rows to force vertical eye travel. Landmarks are reduced to numbers on the device; no video or photos are stored.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<div style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden">
+<a class="zoom" href="img/nurturiq/gaze-model-metrics.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-model-metrics.png" width="2400" height="919" alt="Held-out accuracy of the first gaze model: 72.8% for left versus right half of the screen, but only 56.6% for top versus bottom, barely above the 50% chance line." style="display: block; width: 100%; height: auto"></a>
+<div aria-hidden="true" style="height: 1px; margin: 0 32px; background: #CFE0F5"></div>
+<a class="zoom" href="img/nurturiq/gaze-signal-strength.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="img/nurturiq/gaze-signal-strength.png" width="2600" height="1120" alt="Three feature plots: the horizontal iris feature falls steadily as the target moves right, the matching vertical feature shows no consistent trend, and relative iris y rises only slightly compared with the spread between sessions." style="display: block; width: 100%; height: auto"></a>
+</div>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.4–2.5 · </span>The first model separated left from right 72.8% of the time but top from bottom only 56.6%. Plotting the raw features showed why: the iris feature that tracks horizontal gaze has no consistent vertical trend. That finding drove the vertical-emphasis protocol and a richer feature set.</figcaption>
+</figure>
+
+<figure class="pr-keep" style="margin: 48px 0 0">
+<a class="zoom" href="img/nurturiq/nurturiq-agent-architecture.png" target="_blank" rel="noopener" style="background: #FFFFFF; border: 1px solid #CFE0F5; border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" src="img/nurturiq/nurturiq-agent-architecture.png" width="2400" height="1240" alt="Agent architecture: a parent chat turn goes to an agentic router graph that sends it to a retrieval-augmented answer path with hybrid BM25 and dense retrieval, to inline cards, or to an exercise graph that walks through programs one step per turn, all sharing one checkpointed session." style="display: block; width: 100%; height: auto"></a>
+<figcaption style="margin-top: 12px; max-width: 72ch; font-size: 15px; line-height: 1.55"><span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">FIG 2.6 · </span>The parent chat is two LangGraph graphs sharing one session: an agentic router with hybrid BM25 + dense retrieval over therapy-book corpora, and an exercise graph that walks parents through programs one step at a time.</figcaption>
+</figure>
+
+<div style="margin-top: 48px; padding-top: 16px; border-top: 1px solid #D5D8DD; font-size: 14px; line-height: 1.7; color: #5A6270">
+<p style="margin: 0"><span style="color: #14171A">Built with</span> Python · FastAPI · MediaPipe · OpenCV · scikit-learn · React · LangGraph</p>
+<p style="margin: 0"><span style="color: #14171A">Privacy</span> All gaze data shown is from our team and consenting adults, anonymized. No child data, recordings or screening results appear on this site.</p>
+</div>
+</section>
+
+<section id="rtl-agent" aria-labelledby="rtl-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box; scroll-margin-top: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
+<span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #5A6270">03</span>
+<h2 id="rtl-title" style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">RTL Bug-Hunting Agent</h2>
+<span style="font-size: 15px; color: #5A6270">Oct 2026 – present</span>
+<span style="align-self: center; padding: 2px 8px; border: 1px solid #C3C8CF; border-radius: 999px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 18px; color: #5A6270">In progress</span>
+</div>
+<p style="margin: 16px 0 0; max-width: 34em; font-size: 23px; line-height: 1.4; text-wrap: pretty">An AI agent that finds bugs in FPGA hardware designs (RTL) and proves them with simulation, not guesses.</p>
+
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px 40px; font-size: 16px; line-height: 1.6">
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">Why this problem</h3><p style="margin: 10px 0 0">Verification is where hardware projects spend much of their effort, and in safety-critical FPGA work every claim about a design needs evidence behind it.</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">What we’re building</h3><p style="margin: 10px 0 0">First milestone: a FIFO demo where the agent generates test stimulus that exposes deliberately planted bugs, judged by a human-reviewed checker. Built so far: a tree-sitter Verilog parser that extracts each module’s name, ports (direction and width) and internal signals into JSON.</p></div>
+<div><h3 style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">The principle</h3><p style="margin: 10px 0 0">The same one as RealBench. The agent’s verdict has to come from a simulation result it can point to, never from the model’s confidence.</p></div>
+</div>
+
+<ol aria-label="Roadmap" style="list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); font-size: 15px; line-height: 1.5">
+<li style="position: relative; padding: 22px 20px 12px 0; border-top: 1px solid #C3C8CF"><span aria-hidden="true" style="position: absolute; top: -6px; left: 0; width: 11px; height: 11px; border-radius: 50%; background: #14171A"></span><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #14171A; font-weight: 700">01 · Done ✓</div><div style="margin-top: 4px">Parse modules, ports and signals</div></li>
+<li style="position: relative; padding: 22px 20px 12px 0; border-top: 1px solid #C3C8CF"><span aria-hidden="true" style="position: absolute; top: -6px; left: 0; width: 9px; height: 9px; border-radius: 50%; border: 1px solid #5A6270; background: #ECEDEF"></span><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">02 · Next</div><div style="margin-top: 4px">Cross-file dependency graph</div></li>
+<li style="position: relative; padding: 22px 20px 12px 0; border-top: 1px solid #C3C8CF"><span aria-hidden="true" style="position: absolute; top: -6px; left: 0; width: 9px; height: 9px; border-radius: 50%; border: 1px solid #5A6270; background: #ECEDEF"></span><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">03 · Planned</div><div style="margin-top: 4px">Tool-calling agent that traces signals across files</div></li>
+<li style="position: relative; padding: 22px 20px 12px 0; border-top: 1px solid #C3C8CF"><span aria-hidden="true" style="position: absolute; top: -6px; left: 0; width: 9px; height: 9px; border-radius: 50%; border: 1px solid #5A6270; background: #ECEDEF"></span><div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">04 · Planned</div><div style="margin-top: 4px">Lint with Verilator and simulate with Icarus Verilog in Docker, reading waveforms to decide pass/fail</div></li>
+</ol>
+</section>
+
+<section aria-labelledby="also-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 0; box-sizing: border-box">
+<h2 id="also-title" style="margin: 0; padding-top: 20px; border-top: 1px solid #D5D8DD; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">Also</h2>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; font-size: 15px; line-height: 1.6">
+<div><h3 style="margin: 0; font-size: 16px; font-weight: 600">RoboNav</h3><p style="margin: 2px 0 0; color: #5A6270">Georgia Tech University Rover Challenge team, electrical subteam. C/C++ on Arduino/Teensy driving DC motor controllers over serial; soldering, crimping, power circuitry, Altium PCB.</p></div>
+<div><h3 style="margin: 0; font-size: 16px; font-weight: 600">EnergyHack@GT</h3><p style="margin: 2px 0 0; color: #5A6270">Lead organizer of a 100-team hardware and software hackathon backed by GE Vernova, ExxonMobil and Kimley-Horn.</p></div>
+<div><h3 style="margin: 0; font-size: 16px; font-weight: 600">UAB Cardiovascular Research Lab</h3><p style="margin: 2px 0 0; color: #5A6270">Built and calibrated experimental instrumentation for research trials (Summer 2023).</p></div>
+</div>
+</section>
+
+<section aria-labelledby="skills-title" style="max-width: 1080px; margin: 0 auto; padding: 64px 20px 0; box-sizing: border-box">
+<h2 id="skills-title" style="margin: 0; padding-top: 20px; border-top: 1px solid #D5D8DD; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: #5A6270">Skills</h2>
+<dl style="margin: 20px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6">
+<div style="display: flex; flex-wrap: wrap; gap: 2px 24px; padding: 6px 0"><dt style="flex: 0 0 200px; color: #5A6270">Languages</dt><dd style="flex: 1 1 300px; margin: 0">C, C++, Python, Verilog, Bash, MATLAB, Java</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 2px 24px; padding: 6px 0"><dt style="flex: 0 0 200px; color: #5A6270">Embedded &amp; hardware</dt><dd style="flex: 1 1 300px; margin: 0">Arduino, Teensy, serial protocols, motor controllers, FPGA (Xilinx Vivado), RTL design, PCB design (Altium)</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 2px 24px; padding: 6px 0"><dt style="flex: 0 0 200px; color: #5A6270">Robotics &amp; test</dt><dd style="flex: 1 1 300px; margin: 0">ROS 2, Gazebo, MuJoCo, URDF, hardware-in-the-loop testing, Docker, pytest, CI/CD</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 2px 24px; padding: 6px 0"><dt style="flex: 0 0 200px; color: #5A6270">Vision &amp; ML</dt><dd style="flex: 1 1 300px; margin: 0">MediaPipe, OpenCV, scikit-learn, FastAPI</dd></div>
+</dl>
+</section>
+</main>
+
+<footer id="contact" aria-labelledby="contact-title" style="max-width: 1080px; margin: 0 auto; padding: 120px 20px 56px; box-sizing: border-box; scroll-margin-top: 56px">
+<div style="padding-top: 40px; border-top: 1px solid #C3C8CF">
+<h2 id="contact-title" style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 600; letter-spacing: -0.02em">Let’s talk.</h2>
+<dl style="margin: 36px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Email</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="mailto:raghavanmadabushi10@gmail.com">raghavanmadabushi10@gmail.com</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Phone</dt><dd style="margin: 0; font-size: 18px"><a href="tel:+12054272717">205-427-2717</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">LinkedIn</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://linkedin.com/in/raghavanmadabushi">linkedin.com/in/raghavanmadabushi</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">GitHub</dt><dd style="margin: 0; font-size: 18px; overflow-wrap: anywhere"><a href="https://github.com/RaghavanMadabushi14">github.com/RaghavanMadabushi14</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">PyPI</dt><dd style="margin: 0; font-size: 18px"><a href="https://pypi.org/project/realbench-robotics">realbench-robotics</a></dd></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 14px 0; border-bottom: 1px solid #D5D8DD"><dt style="flex: 0 0 84px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">Résumé</dt><dd style="margin: 0; font-size: 18px"><a href="resume.pdf">Résumé (PDF) ↓</a></dd></div>
+</dl>
+<p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #5A6270">Atlanta, GA · Open to EE, embedded, robotics and autonomy internships · Spring/Summer 2027</p>
+<p style="margin: 40px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #5A6270">© 2026 Raghavan Madabushi</p>
+</div>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('copy-btn'); if(!b) return; var t;
+  b.addEventListener('click',function(){
+    try{ if(navigator.clipboard) navigator.clipboard.writeText('pip install realbench-robotics'); }catch(e){}
+    b.textContent='Copied'; clearTimeout(t); t=setTimeout(function(){ b.textContent='Copy'; },1800);
+  });
+})();
+</script>
+</body>
+</html>
